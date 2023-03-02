@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Escape the Matrix</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Welcome to the <br />Matrix</h1>
+      <p id="subtitle">You are stuck here!</p>
+    </div>
+    <button id="escape" class="btn">ESCAPE</button>
+    <div id="game">
+      <div class="header">
+        <div class="column">
+          <div>
+            <img class="pill blue-pill" src="./images/blue-pill.png" />
+            <img class="pill blue-pill" src="./images/blue-pill.png" />
+            <img class="pill blue-pill" src="./images/blue-pill.png" />
+            <img class="pill blue-pill" src="./images/blue-pill.png" />
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              maiores reprehenderit beatae quidem quae. Sapiente possimus ipsum
+              autem, quo, voluptate, omnis mollitia commodi aspernatur
+              accusantium ullam velit sequi vel itaque?
+            </p>
+          </div>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="column">
+          <div>
+            <img class="pill red-pill" src="./images/red-pill.png" />
+            <img class="pill red-pill" src="./images/red-pill.png" />
+            <img class="pill red-pill" src="./images/red-pill.png" />
+            <img class="pill red-pill" src="./images/red-pill.png" />
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              maiores reprehenderit beatae quidem quae. Sapiente possimus ipsum
+              autem, quo, voluptate, omnis mollitia commodi aspernatur
+              accusantium ullam velit sequi vel itaque?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="header-content">
+        <h2>The game</h2>
+        <p id="description">
+          You seem stuck in the Matrix! There is a way out though. Enter the
+          correct key to escape this place
+        </p>
+      </div>
+      <div id="game-content">
+        <form onsubmit="submitHandler(event)">
+          <input id="first" class="digit" type="text" maxlength="1" autofocus />
+          <input class="digit" type="text" maxlength="1" />
+          <input class="digit" type="text" maxlength="1" />
+          <input class="digit" type="text" maxlength="1" /><br />
+          <input id="submit" class="btn" type="submit" value="Enter key" />
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="./logic/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  background-image: url("../images/bg-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 45vh;
+  border: 2px solid rgb(61, 182, 24);
+}

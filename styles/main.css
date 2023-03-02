@@ -1,0 +1,139 @@
+body {
+  background-image: url("../images/matrix.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  margin: 0;
+  font-family: brush script mt, cursive;
+  text-align: center;
+  color: rgb(61, 182, 24);
+  font-size: 400%;
+  z-index: 5;
+  text-shadow: 4px 4px #585454;
+}
+
+#subtitle {
+  font-family: brush script mt, cursive;
+  text-align: center;
+  color: transparent;
+  font-size: 200%;
+  margin-top: 8px;
+}
+
+#subtitle:hover {
+  color: rgb(129, 248, 93);
+}
+
+.btn {
+  font-family: brush script mt, cursive;
+  font-size: 110%;
+  display: block;
+  margin: auto;
+  margin-top: 90px;
+  padding: 15px 45px;
+  background-color: rgba(129, 248, 93, 0.6);
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(129, 248, 93);
+}
+
+#game {
+  text-align: center;
+  color: white;
+  display: none;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  width: 70%;
+  height: 120vh;
+  border: 2px solid #003b00;
+  background-color: rgba(39, 39, 39, 0.575);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 140px;
+}
+
+#header-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto 30px;
+  margin-top: 130px;
+}
+
+#game-content {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  border: 2px solid #003b00;
+  display: flex;
+  flex-direction: row;
+}
+
+.digit {
+  width: 9%;
+  height: 9vh;
+  margin: 18px;
+  margin-top: 12%;
+  font-size: 230%;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  justify-self: start;
+}
+
+h2 {
+  font-size: 200%;
+  letter-spacing: 0.1em;
+}
+
+#description {
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 35%;
+  font-size: 120%;
+}
+
+#submit {
+  margin-top: 45px;
+}
+
+.pill {
+  width: 100px;
+  height: 130px;
+  opacity: 0.6;
+}
+
+.pill:hover {
+  opacity: 1;
+}
+
+.space {
+  width: 25%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc {
+  width: 90%;
+  text-align: center;
+}
