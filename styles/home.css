@@ -7,7 +7,47 @@ body {
 main {
   display: block;
   margin: auto;
-  width: 70%;
-  height: 45vh;
+  margin-top: 150px;
+  width: 50%;
+  height: 55vh;
+  padding: 10px;
   border: 2px solid rgb(61, 182, 24);
+  background-color: rgba(61, 182, 24, 0.5);
+  text-align: center;
+}
+
+.btn {
+  font-family: brush script mt, cursive;
+  font-size: 110%;
+  margin: 90px 12px auto 36px;
+  padding: 15px 45px;
+  background-color: rgba(129, 248, 93, 0.6);
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(129, 248, 93);
+}
+
+#choice {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+#difficulty {
+  width: 45%;
+  text-align: center;
+  padding: 10px;
+  background-color: brown;
+}
+
+#enter {
+  
 }
