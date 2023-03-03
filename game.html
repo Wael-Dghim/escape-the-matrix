@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Escape the Matrix</title>
   </head>
   <body>
-    <div>
+    <div id="head">
       <h1 id="title">Welcome to the <br />Matrix</h1>
       <p id="subtitle">You are stuck here!</p>
     </div>
@@ -17,34 +23,22 @@
     <div id="game">
       <div class="header">
         <div class="column">
-          <div>
+          <div class="container">
             <img class="pill blue-pill" src="./images/blue-pill.png" />
             <img class="pill blue-pill" src="./images/blue-pill.png" />
             <img class="pill blue-pill" src="./images/blue-pill.png" />
             <img class="pill blue-pill" src="./images/blue-pill.png" />
-            <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              maiores reprehenderit beatae quidem quae. Sapiente possimus ipsum
-              autem, quo, voluptate, omnis mollitia commodi aspernatur
-              accusantium ullam velit sequi vel itaque?
-            </p>
           </div>
         </div>
 
         <div class="space"></div>
 
         <div class="column">
-          <div>
+          <div class="container">
             <img class="pill red-pill" src="./images/red-pill.png" />
             <img class="pill red-pill" src="./images/red-pill.png" />
             <img class="pill red-pill" src="./images/red-pill.png" />
             <img class="pill red-pill" src="./images/red-pill.png" />
-            <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              maiores reprehenderit beatae quidem quae. Sapiente possimus ipsum
-              autem, quo, voluptate, omnis mollitia commodi aspernatur
-              accusantium ullam velit sequi vel itaque?
-            </p>
           </div>
         </div>
       </div>
@@ -66,6 +60,6 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./logic/index.js"></script>
+    <script src="../logic/index.js"></script>
   </body>
 </html>

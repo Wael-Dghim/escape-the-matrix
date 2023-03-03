@@ -5,6 +5,14 @@ $("#yes").on("click", function (e) {
   $("#question").text("Choose wisely");
 });
 
+$("#no").on("click", function (e) {
+  e.preventDefault();
+  alert("You don't really have a choice!");
+  window.localStorage.setItem("digits", 4);
+  window.localStorage.setItem("attempts", 5);
+  window.location.replace("http://127.0.0.1:5500/game.html");
+});
+
 $("#enter").click(function (e) {
   //   e.preventDefault();
   console.log($("#difficulty").val());

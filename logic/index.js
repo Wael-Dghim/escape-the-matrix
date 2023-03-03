@@ -7,7 +7,6 @@ console.log(correct);
 var counter = 0;
 
 $("#escape").click(function () {
-  var $red = $(".red-pill");
   $(this).hide();
   $("#game").css("display", "flex");
   $("#first").focus();
@@ -43,8 +42,7 @@ function submitHandler(event) {
   console.log(counter);
   if (counter < +attempts) {
     if (redPills === 4) {
-      alert("You won");
-      $(".red-pill").css("opacity", "1");
+      window.location.assign("../victory.html");
     } else {
       for (var i = 0; i < bluePills; i++) {
         $($(".blue-pill")[i]).css("opacity", "1");
