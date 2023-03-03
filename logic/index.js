@@ -37,7 +37,7 @@ function submitHandler(event) {
     counter++;
   } else {
     alert("Attempts exceeded");
-    window.location.reload();
+    window.location.assign("../defeat.html");
   }
   console.log(counter);
   if (counter < +attempts) {
@@ -53,7 +53,7 @@ function submitHandler(event) {
       console.log(bluePills, redPills);
       redPills = 0;
       bluePills = 0;
-      alert("try again");
+      alert("Wrong key! You have " + (+attempts - counter) + " attempts left.");
     }
   }
 }
@@ -65,5 +65,10 @@ function generateNumber() {
     arr.unshift(random % 10);
     random = Math.floor(random / 10);
   }
-  return arr;
+  return [3, 7, 0, 8];
 }
+
+$("#explanation").on("click", function (e) {
+  e.preventDefault();
+  alert("Explanation");
+});

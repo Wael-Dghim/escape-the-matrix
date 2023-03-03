@@ -75,6 +75,7 @@ body {
 
 #game-content {
   margin: auto;
+  margin-top: 42px;
   width: 90%;
   height: 60%;
   border: 2px solid #003b00;
@@ -104,9 +105,9 @@ h2 {
 
 #description {
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-align: center;
-  width: 35%;
+  width: 45%;
   font-size: 120%;
 }
 
@@ -141,4 +142,14 @@ h2 {
 
 .container {
   width: 100%;
+}
+
+#explanation {
+  width: 25%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
 }
