@@ -65,10 +65,12 @@ function generateNumber() {
     arr.unshift(random % 10);
     random = Math.floor(random / 10);
   }
-  return [3, 7, 0, 8];
+  return arr;
 }
 
 $("#explanation").on("click", function (e) {
   e.preventDefault();
-  alert("Explanation");
+  alert(
+    "In the Matrix, you have to guess the key correctly to escape. If a digit from the number you enter is existent but not in the correct position in the key, that counts as a blue pill. If a digit is correct and in the same position in the key, that counts as a red pill. The goal is to get 4 red pills to escape the Matrix and enter Paradise."
+  );
 });
